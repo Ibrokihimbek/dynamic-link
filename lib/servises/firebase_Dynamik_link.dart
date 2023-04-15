@@ -1,9 +1,10 @@
 import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:share_plus/share_plus.dart';
 
 class FireBaseDynamicLinkProvider {
-  Future<String> createLink(String refCode) async {
-    final String url = "https://com.example.dynamic_link_example?ref=$refCode";
+  Future<String> createLink() async {
+    const String url = "https://com.example.dynamic_link_example?user_id=";
     final DynamicLinkParameters parameters = DynamicLinkParameters(
       androidParameters: const AndroidParameters(
         packageName: "com.example.dynamic_link_example",
@@ -28,4 +29,6 @@ class FireBaseDynamicLinkProvider {
       Share.share('THIS IS DYNAMIC LINK ${refLink.data}');
     }
   }
+
+
 }
