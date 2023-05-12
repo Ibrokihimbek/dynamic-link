@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dynamic_link_example">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="dynamic_link_example"
         android:name="${applicationName}"

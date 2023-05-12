@@ -1,3 +1,4 @@
+import 'package:dynamic_link_example/pages/scaner/scaner_page.dart';
 import 'package:dynamic_link_example/servises/firebase_Dynamik_link.dart';
 import 'package:flutter/material.dart';
 
